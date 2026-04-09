@@ -21,8 +21,11 @@ export default function Footer() {
           {/* Col 1 */}
           <div className="flex flex-col items-start gap-4">
             <div className="flex items-center gap-2">
-              <Droplet className="text-[var(--color-accent-cyan)] w-8 h-8" />
-              <span className="text-2xl font-black tracking-tight">{BRAND.name}</span>
+              <Droplet size={40} className="text-[var(--color-accent-cyan)]" fill="currentColor" strokeWidth={1.5} />
+              <div className="flex flex-col leading-none">
+                <span className="text-white font-black text-3xl tracking-tighter">ArtE</span>
+                <span className="text-[var(--color-brand-blue)] text-[10px] uppercase font-black tracking-widest mt-1">SEAMLESS GUTTERS</span>
+              </div>
             </div>
             <p className="text-gray-400 font-medium">{t.hero.subtitle}</p>
             <span className="bg-[var(--color-brand-blue)] text-white text-xs px-3 py-1 uppercase tracking-widest font-bold mt-2">
