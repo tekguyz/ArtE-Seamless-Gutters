@@ -4,6 +4,7 @@ import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import { BRAND } from "@/constants/brand";
 import { useLanguage } from "@/context/LanguageContext";
+import heroImage from "@/public/hero-image.jpg";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -51,12 +52,11 @@ export default function Hero() {
           {/* Right Column (Visuals) */}
           <div className="bg-[var(--color-brand-black)] p-4 shadow-2xl relative overflow-hidden min-h-[400px]">
             <Image 
-              src="/hero-image.jpg" 
+              src={heroImage} 
               alt="Seamless Gutter Installation in Pompano Beach" 
               fill 
               className="object-cover border-4 border-[var(--color-brand-black)]" 
               priority 
-              unoptimized
             />
           </div>
 
