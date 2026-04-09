@@ -56,6 +56,7 @@ export default function Hero() {
               fill 
               className="object-cover border-4 border-[var(--color-brand-black)]" 
               priority 
+              unoptimized
             />
           </div>
 
