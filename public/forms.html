@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netlify Form Detection</title>
+</head>
+<body>
+    <!-- This form is for Netlify build-time detection only -->
+    <form name="arte-leads" data-netlify="true" netlify-honeypot="bot-field" encType="multipart/form-data" hidden>
+        <input type="text" name="bot-field" />
+        <input type="text" name="fullName" />
+        <input type="tel" name="phone" />
+        <input type="email" name="email" />
+        <select name="service">
+            <option value="Installation">Installation</option>
+            <option value="Repair">Repair</option>
+            <option value="Cleaning">Cleaning</option>
+            <option value="Leaf Guards">Leaf Guards</option>
+        </select>
+        <textarea name="message"></textarea>
+    </form>
+</body>
+</html>
